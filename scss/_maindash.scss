@@ -1,0 +1,89 @@
+.movie-title {
+    font-size: 4rem;
+    padding: 1.4rem 0;
+    margin: 3rem 0rem 1.5rem 0rem;
+    color: $white;
+    border-bottom: 2.5px solid $color-primary;
+    font-family: var(--Sniglet-font);
+    border-image: linear-gradient(to right, $color-primary,
+        rgba(0, 0, 0, 0)) 30;
+
+}
+
+.movie-tabs {
+    padding: 1rem 1.4rem 1rem 1.2rem;
+    display: flex;
+    align-items: center;
+     width: 100%;
+     justify-content: center;
+
+      @include for_breakpoint(mobile) { 
+         width: 100%;
+         margin: 1rem 0;
+       
+      }
+
+    .btn-tab {
+        color: $white;
+        background-color: $card-bg;
+        border: none;
+        margin: 2rem 0;
+        width: 150px;
+        height: 40px;
+        max-width:100%;
+        font-size: 1.5rem;
+        @include border-radius(5px);
+
+        @include for_breakpoint(mobile) {
+           font-size: 1.2rem;padding: 1rem;
+        //   padding: 0.8rem 3rem 0.8rem 3rem;
+      
+        }
+
+        &.active {
+            color: $white;
+            background-color: $color-primary;
+
+        }
+    }
+}
+
+.image-container {
+    margin: 1.5rem 0;
+
+   
+    .card{
+        background-color: $body-bg;
+        border: none !important;
+
+        img {
+                height: 600px;
+                width: auto;
+                object-fit: cover;
+            }
+
+        h4 {
+            color: $white;
+            font-size: 1.5rem;
+        }
+        .movie-dec {
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            width: 100%;
+
+
+            .year {
+               color: $white-hover;
+               font-size: 1.5rem;
+            }
+            .star {
+                color: yellow;
+                font-size: 1.4rem;
+                
+            }
+        }
+    }
+
+}
+

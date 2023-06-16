@@ -1,0 +1,90 @@
+.footer-container {
+    width: 100%;
+    min-height: 10rem;
+    padding: 6rem 0; 
+    background-color: $card-bg;
+    margin-top:  7rem;
+
+
+
+    .footer-top {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .footer-logo {
+      
+            height: 4rem;
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+      
+       
+
+
+       
+    }
+
+    .footer-menu {
+        a {
+            text-decoration: none;
+            color: $white;
+            font-size: 1.5rem;
+            padding: 0 0.4rem;
+           
+        }
+              @include for_breakpoint(mobile) {
+                   margin-bottom: 2.5rem;
+                   margin-top: 1.5rem;
+                    padding: 0 0.7rem;
+              }
+    }
+
+
+
+.footer-social {
+    opacity: 0.8;
+    color: #222;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    align-content: center;
+    
+    .footer-icons {
+            margin-right: 0.8rem;
+            background-color: #f1f1f1;
+            padding: 1rem;
+            border-radius: 10rem;
+            opacity: 0.8;
+        }
+    
+    .footer-icon {
+            margin-right: 0.8rem;
+            background-color: #f1f1f1;
+            padding: 1rem 1.3rem 1rem 1.3rem;
+            border-radius: 10rem;
+            opacity: 0.8;
+        }
+}
+
+.footer-bottom {
+
+    margin: 8rem 0rem 1rem 0rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+
+    a {
+        text-decoration: none;
+        color: $white;
+        font-size: 1.5rem;
+        padding: 0 0.5rem;
+    }
+}
+
+}
+

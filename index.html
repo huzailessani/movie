@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Application</title>
+    <link rel="icon" href="/images/fav.png" type="image/png" sizes="16x16" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="  https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!--HEADER_SECTION-->
+    <header>
+
+        <div class="slider">
+            <div class="slide active">
+                <img src="./images/banner-image/the-avengers.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./images/banner-image/joker.jpg" alt="">
+
+            </div>
+            <div class="slide">
+                <img src="./images/banner-image/avatar.jpg" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="./images/banner-image/the-avengers.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./images/banner-image/joker.jpg" alt="">
+            </div>
+            <div class="header-wrap">
+            <nav class="navbar navbar-expand-lg navbar-dark ">
+               
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="./images/header/logo/cinema.png" alt=""></a>
+                    
+                <button class="navbar-toggler mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+               
+               
+
+                 <!-- <form action="#" class=" order-lg-last">
+                    <div class="form-group d-flex">
+                      
+                      <div class="se">
+                        <input class="searchInput"type="text" name="" placeholder="Search">
+                        <div class="search"></div>
+                      </div>
+                    </div>
+                  </form> -->
+                  
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="me-auto">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Schedule</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Movies
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">HollyWood</a></li>
+                                    <li><a class="dropdown-item" href="#">BollyWood</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">News</a>
+                            </li>
+
+                        </ul>
+                       
+                    </div>
+                   
+                   
+                    
+                    
+</nav>
+
+  <div class="search-box">
+    <input id="searchinput" type="text" class="search-input" placeholder="Search for movies">
+    <a class="search-btn" href="#">
+      <!-- Seach Icon -->
+      <i class="fas fa-search"></i>
+    </a>
+  </div>          
+</div>
+
+            <div class="audio">
+                <i class=" fas fa-play"></i>
+            </div>
+
+            <div class="navigation-visibility-left">
+                <button class="book-now-btn">Book Now</button>
+                <div class="banner-text"><span>JANUARY 29 , 2018 </span>
+                    <p>CINEMA 3D</p>
+                </div>
+            </div>
+
+
+            <!-- <div class="navigation-part">
+
+                <div class="social">
+                    <i class="icon fab fa-facebook-f "></i>
+                    <i class=" icons fab fa-twitter "></i>
+                    <i class="icons fab fa-instagram"></i>
+                </div>
+
+                <div class="navigation">
+                    <div class="navigation-visibility ">
+                        <i class="fa fa-arrow-left prev-btn "></i>
+                        <div class="slide-icon active">01</div>
+                        <div class="slide-icon">02</div>
+                        <div class="slide-icon">03</div>
+                        <div class="slide-icon">04</div>
+                        <div class="slide-icon">05</div>
+                        <i class="fa fa-arrow-right next-btn "></i>
+                    </div>
+                </div>
+
+            </div> -->
+
+
+
+        </div>
+
+    </header>
+    <!-- new -->
+
+    <!--MAIN SECTION-->
+
+    <div class="container">
+        <div class="col-12">
+            <h5 class="movie-title">Movies</h5>
+        </div>
+        <div class="row">
+            <div class="movie-tabs">
+                <button class="btn-tab active me-4">Movies</button>
+                <button class="btn-tab me-4">Series</button>
+                <button class="btn-tab me-4">Episodes</button>
+            </div>
+        </div>
+        <div class="row image-container">
+            <div class="col-12 col-md-4">
+                <div class="card ">
+                    <img class="card-img-top" src="./images/main/p-1.jpg" alt="">
+                    <div class="card-body">
+                        <h4>Insidious</h4>
+                        <div class="movie-dec">
+                            <p class="year">2018</p>
+                            <span class="fas fa-star star"> 7.4 </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="./images/main/post-1.jpg" alt="">
+                    <div class="card-body">
+                        <h4>Venom</h4>
+                        <div class="movie-dec">
+                            <p class="year">2020</p>
+                            <span class="fas fa-star star"> 6.4 </span>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="./images/main/post-4.jpg" alt="">
+                    <div class="card-body">
+                        <h4>Dune</h4>
+                        <div class="movie-dec">
+                            <p class="year">2017</p>
+                            <span class="fas fa-star star"> 4.4 </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row image-container">
+            <div class="col-12 col-md-4">
+                <div class="card ">
+                    <img class="card-img-top" src="./images/main/post-7.jpg" alt="">
+                    <div class="card-body">
+                        <h4>Old</h4>
+                        <div class="movie-dec">
+                            <p class="year">2019</p>
+                            <span class="fas fa-star star"> 6.7 </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="./images/main/p-5.jpg" alt="">
+                    <div class="card-body">
+                        <h4>Deadpool</h4>
+                        <div class="movie-dec">
+                            <p class="year">2021</p>
+                            <span class="fas fa-star star"> 3.4 </span>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="./images/main/post-11.jpg" alt="">
+                    <div class="card-body">
+                        <h4>Luca</h4>
+                        <div class="movie-dec">
+                            <p class="year">2015</p>
+                            <span class="fas fa-star star"> 5.4 </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!--FOOTER SECTION -->
+    <footer class="footer-container">
+        <div class="container">
+            <div class="row footer-top">
+                <div class="col-12 col-md-4">
+                    <img class="footer-logo" src="/images/header/logo/cinema.png" alt="">
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="footer-menu">
+                        <a href="#">Home</a>
+                        <a href="#">Schedule</a>
+                        <a href="#">Movies</a>
+                        <a href="#">News</a>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="footer-social">
+                        <i class="footer-icon fab fa-facebook-f "></i>
+                        <i class=" footer-icons fab fa-twitter "></i>
+                        <i class="footer-icons fab fa-instagram"></i>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="row footer-bottom">
+                <div class="col-12 col-md-6">
+                    <a href="#"><i class="fas fa-envelope"></i> cinema@gmail.com</a>
+
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <p class=" text-muted"><small>&copy; 2019. All Rights Reserved.</small>
+                    </p>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+    </footer>
+
+
+    <script src=" https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="js/main.js"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+@mixin control-transition() {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  -moz-transition: all .3s ease;
+}
+
+@mixin box-shadow() {
+  -webkit-box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 1);
+}
+
+@mixin border-radius($x) {
+  -webkit-border-radius: $x;
+  -moz-border-radius: $x;
+  border-radius: $x;
+}
+
+@keyframes circleScale {
+  0% {transform: scale(0.86) }
+  50% { transform: scale(1) }
+  100% { transform: scale(0.86) }
+}
+
+$size__site_content_width : 1024px;
+/* Media Queries */
+$media_queries : (
+    'mobile' : unquote("only screen and (max-width: 667px)") 
+ // 'tablet'    : only screen and (min-width: 668px) and (max-width: "$size__site_content_width"),
+  //'desktop'   : only screen and (min-width: ("$size__site_content_width + 1"))
+  //'retina2'   : only screen and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi),
+  //'retina3'   : only screen and (-webkit-min-device-pixel-ratio: 3) and (min-resolution: 288dpi),
+  //'landscape' : screen and (orientation:landscape),
+  //'portrait'  : screen and (orientation:portrait)
+);
+
+@mixin for_breakpoint($breakpoints) {
+  $conditions : ();
+
+  @each $breakpoint in $breakpoints {
+    $conditions: append($conditions,
+      #{inspect(map-get($media_queries, $breakpoint))},
+      comma);
+  }
+
+  @media #{$conditions} {
+    @content;
+  }
+}
